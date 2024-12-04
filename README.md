@@ -65,7 +65,7 @@ File: stardew_wiki/main.py
 ---
 ### Living Things Subpackage
 
-File: livingthings/main.py
+File: stardew_wiki/livingthings
 
 #### Description:
 
@@ -78,20 +78,149 @@ File: livingthings/main.py
 - Defines Animal, BarnAnimal, CoopAnimal, and AnimalDatabase classes.
 - Allows searching for animals by name or type.
 
-**Functions:**
-- `search_by_name(name)`: Finds an animal by name.
-- `search_by_type(type)`: Filters animals by type (Barn/Coop).
-- `input_animal()`: Interactive function for searching animals via a menu.
+  **Functions:**
+  - `search_by_name(name)`: Finds an animal by name.
+  - `search_by_type(type)`: Filters animals by type (Barn/Coop).
+  - `input_animal()`: Interactive function for searching animals via a menu.
 
 2. crops.py:
 
 - Defines Crop and CropDatabase classes.
 - Allows searching for crops by name or season.
 
-**Functions:**
-- `search_by_name(name)`: Finds a crop by name.
-- `search_by_season(season)`: Lists crops for a specific season.
-- `input_crop()`: Interactive function for searching crops via a menu.
+  **Functions:**
+  - `search_by_name(name)`: Finds a crop by name.
+  - `search_by_season(season)`: Lists crops for a specific season.
+  - `input_crop()`: Interactive function for searching crops via a menu.
+
+**1. Module 1: `animals.py`**
+
+- Function 1: `search_by_name(name)`
+
+    - **Example Usage:**
+    ```python
+    search_by_name(name)
+    ```
+    - **Output:**
+    ```
+    Enter the name of the animal: Cow
+
+    Search Result:
+    Name: Cow
+    Growth Time: 5(night)
+    Product: Milk (Price: 125)
+    Artisan Product: Cheese (Price: 230)
+    Type: Barn
+    ```
+
+- Function 2: `search_by_type(type)`
+
+    - **Example Usage:**
+    ```python
+    search_by_type(type)
+    ```
+    - **Output:**
+    ```
+    Enter the type of animal (Barn/Coop): Barn
+
+    Search Result:
+    Name: Cow
+    Growth Time: 5(night)
+    Product: Milk (Price: 125)
+    Artisan Product: Cheese (Price: 230)
+    Type: Barn
+
+    Name: Goat
+    Growth Time: 5(night)
+    Product: Goat Milk (Price: 225)
+    Artisan Product: Goat Cheese (Price: 400)
+    Type: Barn
+
+    Name: Sheep
+    Growth Time: 4(night)
+    Product: Wool (Price: 340)
+    Artisan Product: Cloth (Price: 470)
+    Type: Barn
+
+    Name: Pig
+    Growth Time: 10(night)
+    Product: Truffle (Price: 625)
+    Artisan Product: Truffle Oil (Price: 1065)
+    Type: Barn
+
+    Name: Ostrich
+    Growth Time: 7(night)
+    Product: Ostrich Egg (Price: 600)
+    Artisan Product: Mayonnaise(10) (Price: 190)
+    Type: Barn
+    ```
+
+- Function 3: `input_animal()`
+
+    - **Example Usage:**
+    ```python
+    input_animal()
+    ```
+    - **Output:**
+    ```
+    Animal Search Menu:
+    1. Search by Name
+    2. Search by Type (Barn/Coop)
+    3. Exit
+    Enter your choice: 1
+    ```
+
+**2. Module 2: `crops.py`**
+
+- Function 1: `search_by_name(name)`
+
+  - **Example Usage:**
+    ```python
+    search_by_name(name)
+    ```
+    - **Output:**
+    ```
+    Enter the name of the crop: Corn
+
+    Search Result:
+    Name: Corn
+    Season: Summer/Fall
+    Growth Time: 14
+    Regrowth Time: 4.0
+    Price: 50
+    Crafting Product: Oil (Price: 100.0)
+    ```
+
+- Function 2: `search_by_season(season)`
+
+  - **Example Usage:**
+    ```python
+    search_by_season(season)
+    ```
+    - **Output:**
+    ```
+    Enter the season (Spring/Summer/Fall/Tropical): Tropical
+
+    Search Result:
+    Cactus
+    Pineapple
+    Taro
+    ```
+
+- Function 3: `input_crop()`
+
+  - **Example Usage:**
+    ```python
+    input_crop()
+    ```
+    - **Output:**
+    ```
+    Crop Search Menu:
+    1. Search by Name
+    2. Search by Season
+    3. Exit
+    Enter your choice: 3
+    ```
 
 ---
 
@@ -125,7 +254,7 @@ File: stardew_wiki/recipes
 
 - Function 1: `list_all_recipes(recipes_df)`
 
-    **Example Usage:**
+    - **Example Usage:**
   ```python
   list_all_recipes(recipes_df)
   ```

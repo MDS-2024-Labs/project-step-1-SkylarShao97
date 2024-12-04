@@ -82,10 +82,16 @@ class AnimalDatabase:
             self.animals[animal.name] = animal
 
     def search_by_name(self, name):
+        """
+        Finds an animal by name.
+        """
         animal = self.animals.get(name)
         return str(animal) if animal else "Animal not found."
 
     def search_by_type(self, animal_type):
+        """
+        Filters animals by type (Barn/Coop).
+        """
         filtered_animals = [
             animal for animal in self.animals.values()
             if getattr(animal, "animal_type", "").lower() == animal_type.lower()
@@ -94,7 +100,7 @@ class AnimalDatabase:
 
 def input_animal():
     """
-    Interact with the user to search for animals using the subclass structure.
+    Interactive function for searching animals via a menu.
     """
     # Initialize the database
     db = AnimalDatabase("data/Animals.csv")

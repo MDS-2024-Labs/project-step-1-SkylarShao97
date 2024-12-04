@@ -5,13 +5,6 @@ class Crop:
     def __init__(self, name, season, growth_time, regrowth_time, price, craft_product, craft_price):
         """
         Initialize a Crop instance.
-        :param name: Name of the crop.
-        :param season: Season(s) the crop grows in.
-        :param growth_time: Number of days required to grow.
-        :param regrowth_time: Days for regrowth (if applicable).
-        :param price: Price of the crop.
-        :param craft_product: Crafting product derived from the crop.
-        :param craft_price: Price of the crafting product.
         """
         self.name = name
         self.season = season
@@ -37,7 +30,6 @@ class CropDatabase:
     def __init__(self, csv_file):
         """
         Initialize the crop database by loading data from a CSV file.
-        :param csv_file: Path to the CSV file.
         """
         self.crops = {}
         self.load_data_from_csv(csv_file)
@@ -45,7 +37,6 @@ class CropDatabase:
     def load_data_from_csv(self, csv_file):
         """
         Load crop data from the provided CSV file.
-        :param csv_file: Path to the CSV file.
         """
         # Resolve the path to the current script's directory
         base_path = Path(__file__).parent
@@ -66,18 +57,14 @@ class CropDatabase:
 
     def search_by_name(self, name):
         """
-        Search for a crop by name.
-        :param name: Name of the crop.
-        :return: Crop details or a message if not found.
+        Finds a crop by name.
         """
         crop = self.crops.get(name)
         return str(crop) if crop else "Crop not found."
 
     def search_by_season(self, season):
         """
-        Search for crops by season.
-        :param season: Season to filter crops (e.g., Spring, Summer, Fall, Winter).
-        :return: List of crops for the specified season or a message if none are found.
+        Lists crops for a specific season.
         """
         filtered_crops = [
             crop.name for crop in self.crops.values()
@@ -91,7 +78,7 @@ class CropDatabase:
 
 def input_crop():
     """
-    Interact with the user to search for crops.
+    Interactive function for searching crops via a menu.
     """
     db = CropDatabase("data/Crops.csv")
 
