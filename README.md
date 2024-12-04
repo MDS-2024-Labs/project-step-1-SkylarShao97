@@ -285,3 +285,29 @@ File: recipes/main.py
 3. **Follow the Menu:**
    - Interact with the program by selecting options from the menu and following the prompts.
 
+## Data Files
+### Animals Data (Animals.csv)
+- Columns: 
+  - name_animal: name of animals
+  - type: Barn/Coop animals
+  - growth_animal: time for animals to mature
+  - product_animal: the product of the animal
+  - product_animal_price: the price of the product
+  - artisan_animal: the artisan product made by the animal's product
+  - artisan_animal_price: the price of the artisan product
+
+### Crops Data (Crops.csv)
+- Columns: 
+  - name_crop: name of crops
+  - season: the growth season of the crop
+  - growth_crop: the time for the crop to mature
+  - regrowth_crop: the regrowth time for the crop
+  - crop_price: the price of the crop
+  - craft_crop: the crafting product of the crop
+  - craft_crop_price: the price of the crafting product
+  
+### Recipes Data (wiki.xlsx)
+**Sheets:**
+- Recipes: Contains recipe names and ingredients.
+- Crops: Crop-related information.
+- Animals: Animal-related information.
