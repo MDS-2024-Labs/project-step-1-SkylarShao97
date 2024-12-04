@@ -1,11 +1,16 @@
 import pandas as pd
-from subpackage_recipes.recipe_search import list_all_recipes, search_recipe_by_name, ingredient_details
-from subpackage_recipes.ingredient_search import list_all_ingredients, search_recipes_by_ingredients, suggest_missing_ingredients
+from pathlib import Path
+from .recipe_search import list_all_recipes, search_recipe_by_name, ingredient_details
+from .ingredient_search import list_all_ingredients, search_recipes_by_ingredients, suggest_missing_ingredients
 
 # Load the data directly in main.py
 def load_data():
     """Loads the data from the Excel file."""
-    file_path = 'data/DATA581 Project csv.xlsx'
+
+    # Dynamically resolve the path to the data file
+    base_path = Path(__file__).parent
+    file_path = base_path / "data/wiki.xlsx"
+    
     recipes_data = pd.read_excel(file_path, sheet_name='Recipes')
     crops_data = pd.read_excel(file_path, sheet_name='Crops')
     animals_data = pd.read_excel(file_path, sheet_name='Animals')
@@ -40,7 +45,7 @@ def main():
         elif choice == "6":
             suggest_missing_ingredients(recipes_data)
         elif choice == "7":
-            print("Goodbye!")
+            print("Returning to the Menu...")
             break
         else:
             print("Invalid choice. Please try again.")
