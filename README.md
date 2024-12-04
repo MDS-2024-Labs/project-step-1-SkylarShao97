@@ -94,22 +94,36 @@ File: livingthings/main.py
 - `input_crop()`: Interactive function for searching crops via a menu.
 
 ---
+
 ### Recipes Subpackage
-File: recipes/main.py
+File: stardew_wiki/recipes
 
 #### Description:
 
 - Provides access to recipe and ingredient-related data.
 
 #### Modules
-
 1. recipe_search.py:
 
 - Allows searching and listing of recipes.
 
 **Functions:**
 - `list_all_recipes(recipes_df)`: Lists all recipes.
-    - **Example Usage:**
+- `search_recipe_by_name(recipes_df)`: Finds a recipe by name.
+- `ingredient_details(crops_df, animals_df)`: Fetches details of an ingredient from crop and animal data.
+
+2. ingredient_search.py:
+
+- Finds recipes by available ingredients or suggests missing ones.
+
+**Functions:**
+- `list_all_ingredients(recipes_df)`: Lists all unique ingredients.
+- `search_recipes_by_ingredients(recipes_df)`: Finds recipes containing specific ingredients.
+- `suggest_missing_ingredients(recipes_df)`: Suggests missing ingredients for a recipe.
+
+##### Module 1: `recipe_search.py` 
+**Function 1: `list_all_recipes(recipes_df)`**
+    **Example Usage:**
   ```python
   list_all_recipes(recipes_df)
   ```
@@ -126,7 +140,8 @@ File: recipes/main.py
   - Hashbrowns
   - Bread
   ```
-- `search_recipe_by_name(recipes_df)`: Finds a recipe by name.
+
+**Function 2: `search_recipe_by_name(recipes_df)`**
     - **Example Usage:**
     ```python
     search_recipe_by_name(recipes_df)
@@ -144,7 +159,7 @@ File: recipes/main.py
     Ingredients: Cauliflower (1), Cheese (1)
     ```
     
-- `ingredient_details(crops_df, animals_df)`: Fetches details of an ingredient from crop and animal data.
+**Function 3: `ingredient_details(crops_df, animals_df)`**
     - **Example Usage:**
     ```python
     ingredient_details(crops_df, animals_df)
@@ -170,12 +185,8 @@ File: recipes/main.py
     Ingredient not found in Crops or Animals.
     ```
 
-2. ingredient_search.py:
-
-- Finds recipes by available ingredients or suggests missing ones.
-
-**Functions:**
-- `list_all_ingredients(recipes_df)`: Lists all unique ingredients.
+##### Module 2: `ingredient_search.py` 
+**Function 1: `list_all_ingredients(recipes_df)`**
     - **Example Usage:**
     ```python
     list_all_ingredients(recipes_df)
@@ -196,8 +207,8 @@ File: recipes/main.py
     - Wheat Flour
     - Yam
     ```
-
-- `search_recipes_by_ingredients(recipes_df)`: Finds recipes containing specific ingredients.
+    
+**Function 2: `search_recipes_by_ingredients(recipes_df)`**
     - **Example Usage:**
     ```python
     search_recipes_by_ingredients(recipes_df)
@@ -214,8 +225,8 @@ File: recipes/main.py
     - Pizza
     - Omelet
     ```
-
-- `suggest_missing_ingredients(recipes_df)`: Suggests missing ingredients for a recipe.
+    
+**Function 3: `suggest_missing_ingredients(recipes_df)`**
     - **Example Usage:**
     ```python
     suggest_missing_ingredients(recipes_df)
@@ -231,6 +242,7 @@ File: recipes/main.py
     - Tomato
     ```
 
+---
 #### **Menu Options**
 
 ##### **1. List All Recipes**
