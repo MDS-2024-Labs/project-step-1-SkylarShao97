@@ -255,129 +255,129 @@ File: stardew_wiki/recipes
 - Function 1: `list_all_recipes(recipes_df)`
 
     - **Example Usage:**
-  ```python
-  list_all_recipes(recipes_df)
-  ```
-     - **Output:**
-   ```
-     Available Recipes:
-   - Fried Egg
-   - Omelet
-   - Cheese Cauliflower
-   - Vegetable Medley
-   - Pizza
-   - Bean Hotpot
-   - Glazed Yams
-   - Hashbrowns
-   - Bread
-   ```
+      ```python
+      list_all_recipes(recipes_df)
+      ```
+      - **Output:**
+      ```
+        Available Recipes:
+      - Fried Egg
+      - Omelet
+      - Cheese Cauliflower
+      - Vegetable Medley
+      - Pizza
+      - Bean Hotpot
+      - Glazed Yams
+      - Hashbrowns
+      - Bread
+      ```
 
 - Function 2: `search_recipe_by_name(recipes_df)`
 
-    - **Example Usage:**
+  - **Example Usage:**
     ```python
     search_recipe_by_name(recipes_df)
     ```
-     - **Output 1:**
-     ```
-     Enter the name of the recipe to search: Pizza
-     Recipe: Pizza
-     Ingredients: Wheat Flour (1), Tomato (1), Cheese (1)
-     ```
-     - **Output 2:**
-     ```
-     Enter the name of the recipe to search: C
-     Recipe: Cheese Cauliflower
-     Ingredients: Cauliflower (1), Cheese (1)
-     ```
+    - **Output 1:**
+    ```
+    Enter the name of the recipe to search: Pizza
+    Recipe: Pizza
+    Ingredients: Wheat Flour (1), Tomato (1), Cheese (1)
+    ```
+    - **Output 2:**
+    ```
+    Enter the name of the recipe to search: C
+    Recipe: Cheese Cauliflower
+    Ingredients: Cauliflower (1), Cheese (1)
+    ```
      
 - Function 3: `ingredient_details(crops_df, animals_df)`
   
-    - **Example Usage:**
+  - **Example Usage:**
     ```python
     ingredient_details(crops_df, animals_df)
     ```
-     - **Output 1:**
-     ```
-     Enter the ingredient name to see details (or type 'STOP' to quit): Wheat
-     
-     Ingredient found in Crops:
-     Name: Wheat
-     Craft Name: Wheat Flour
-     Season: Summer/Fall
-     Growth Time: 4 days
-     Regrowth Time: nan days
-     Price: 25
-     Craft Price: 50.0
-     ```
- 
-     - **Output 2:**
-     ```
-     Enter the ingredient name to see details (or type 'STOP' to quit): c
-     
-     Ingredient not found in Crops or Animals.
-     ```
+    - **Output 1:**
+    ```
+    Enter the ingredient name to see details (or type 'STOP' to quit): Wheat
+    
+    Ingredient found in Crops:
+    Name: Wheat
+    Craft Name: Wheat Flour
+    Season: Summer/Fall
+    Growth Time: 4 days
+    Regrowth Time: nan days
+    Price: 25
+    Craft Price: 50.0
+    ```
+
+    - **Output 2:**
+    ```
+    Enter the ingredient name to see details (or type 'STOP' to quit): c
+    
+    Ingredient not found in Crops or Animals.
+    ```
 
 **Module 2: `ingredient_search.py`**
 
 - Function 1: `list_all_ingredients(recipes_df)`
   
-    - **Example Usage:**
+  - **Example Usage:**
     ```python
     list_all_ingredients(recipes_df)
     ```
-     - **Output:**
-     ```
-     Unique Ingredients:
-     - Beet
-     - Cauliflower
-     - Cheese
-     - Egg
-     - Green Bean
-     - Milk
-     - Oil
-     - Potato
-     - Sugar
-     - Tomato
-     - Wheat Flour
-     - Yam
-     ```
+    - **Output:**
+    ```
+    Unique Ingredients:
+    - Beet
+    - Cauliflower
+    - Cheese
+    - Egg
+    - Green Bean
+    - Milk
+    - Oil
+    - Potato
+    - Sugar
+    - Tomato
+    - Wheat Flour
+    - Yam
+    ```
      
 - Function 2: `search_recipes_by_ingredients(recipes_df)`
   
-    - **Example Usage:**
+  - **Example Usage:**
     ```python
     search_recipes_by_ingredients(recipes_df)
     ```
-     - **Output:**
-     ```
-     Enter ingredients one by one (type 'STOP' to finish):
-     Enter ingredient: Egg
-     Enter ingredient: Cheese
-     Enter ingredient: STOP
-     Recipes containing the ingredients:
-     - Cheese Cauliflower
-     - Fried Egg
-     - Pizza
-     - Omelet
-     ```
+    - **Output:**
+    ```
+    Enter ingredients one by one (type 'STOP' to finish):
+    Enter ingredient: Egg
+    Enter ingredient: Cheese
+    Enter ingredient: STOP
+    Recipes containing the ingredients:
+    - Cheese Cauliflower
+    - Fried Egg
+    - Pizza
+    - Omelet
+    ```
     
 - Function 3: `suggest_missing_ingredients(recipes_df)`
   
-    - **Example Usage:**
+  - **Example Usage:**
     ```python
     suggest_missing_ingredients(recipes_df)
     ```
-     - **Output:**
-     ```
-     Enter the name of the recipe: Pizza
-     Enter the ingredients you already have (type 'STOP' to finish):
-     Enter ingredient: Cheese
-     Enter ingredient: STOP
-     Missing Ingredients:
-     - Wheat Flour
-     - Tomato
-     ```
+    - **Output:**
+    ```
+    Enter the name of the recipe: Pizza
+    Enter the ingredients you already have (type 'STOP' to finish):
+    Enter ingredient: Cheese
+    Enter ingredient: STOP
+    Missing Ingredients:
+    - Wheat Flour
+    - Tomato
+    ```
 
 ---
 #### **Menu Options**
