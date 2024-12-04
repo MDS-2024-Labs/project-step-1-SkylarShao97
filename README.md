@@ -122,7 +122,9 @@ File: stardew_wiki/recipes
    - `suggest_missing_ingredients(recipes_df)`: Suggests missing ingredients for a recipe.
 
 **1. Module 1: `recipe_search.py`**
+
 - Function 1: `list_all_recipes(recipes_df)`
+
     **Example Usage:**
   ```python
   list_all_recipes(recipes_df)
@@ -142,6 +144,7 @@ File: stardew_wiki/recipes
   ```
 
 - Function 2: `search_recipe_by_name(recipes_df)`
+
     - **Example Usage:**
     ```python
     search_recipe_by_name(recipes_df)
@@ -160,6 +163,7 @@ File: stardew_wiki/recipes
     ```
     
 - Function 3: `ingredient_details(crops_df, animals_df)`
+  
     - **Example Usage:**
     ```python
     ingredient_details(crops_df, animals_df)
@@ -186,7 +190,9 @@ File: stardew_wiki/recipes
     ```
 
 **Module 2: `ingredient_search.py`**
+
 - Function 1: `list_all_ingredients(recipes_df)`
+  
     - **Example Usage:**
     ```python
     list_all_ingredients(recipes_df)
@@ -209,6 +215,7 @@ File: stardew_wiki/recipes
     ```
     
 - Function 2: `search_recipes_by_ingredients(recipes_df)`
+  
     - **Example Usage:**
     ```python
     search_recipes_by_ingredients(recipes_df)
@@ -227,6 +234,7 @@ File: stardew_wiki/recipes
     ```
     
 - Function 3: `suggest_missing_ingredients(recipes_df)`
+  
     - **Example Usage:**
     ```python
     suggest_missing_ingredients(recipes_df)
