@@ -107,19 +107,19 @@ File: stardew_wiki/recipes
 
 - Allows searching and listing of recipes.
 
-**Functions:**
-- `list_all_recipes(recipes_df)`: Lists all recipes.
-- `search_recipe_by_name(recipes_df)`: Finds a recipe by name.
-- `ingredient_details(crops_df, animals_df)`: Fetches details of an ingredient from crop and animal data.
+   **Functions:**
+   - `list_all_recipes(recipes_df)`: Lists all recipes.
+   - `search_recipe_by_name(recipes_df)`: Finds a recipe by name.
+   - `ingredient_details(crops_df, animals_df)`: Fetches details of an ingredient from crop and animal data.
 
 2. ingredient_search.py:
 
 - Finds recipes by available ingredients or suggests missing ones.
 
-**Functions:**
-- `list_all_ingredients(recipes_df)`: Lists all unique ingredients.
-- `search_recipes_by_ingredients(recipes_df)`: Finds recipes containing specific ingredients.
-- `suggest_missing_ingredients(recipes_df)`: Suggests missing ingredients for a recipe.
+   **Functions:**
+   - `list_all_ingredients(recipes_df)`: Lists all unique ingredients.
+   - `search_recipes_by_ingredients(recipes_df)`: Finds recipes containing specific ingredients.
+   - `suggest_missing_ingredients(recipes_df)`: Suggests missing ingredients for a recipe.
 
 ##### Module 1: `recipe_search.py` 
 **Function 1: `list_all_recipes(recipes_df)`**
