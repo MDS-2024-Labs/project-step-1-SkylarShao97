@@ -97,7 +97,7 @@ File: stardew_wiki/livingthings
 
 - Function 1: `search_by_name(name)`
 
-    - **Example Usage:**
+  - **Example Usage:**
     ```python
     search_by_name(name)
     ```
@@ -115,7 +115,7 @@ File: stardew_wiki/livingthings
 
 - Function 2: `search_by_type(type)`
 
-    - **Example Usage:**
+  - **Example Usage:**
     ```python
     search_by_type(type)
     ```
@@ -157,7 +157,7 @@ File: stardew_wiki/livingthings
 
 - Function 3: `input_animal()`
 
-    - **Example Usage:**
+  - **Example Usage:**
     ```python
     input_animal()
     ```
