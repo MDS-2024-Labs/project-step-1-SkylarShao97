@@ -11,6 +11,7 @@ The project is organized into subpackages (livingthings and recipes), each conta
 
 ## Project Structure
 
+```
 stardew_wiki/
 ├── __init__.py          # Initializes the Stardew Wiki package
 ├── main.py              # Entry point for the entire package
@@ -29,6 +30,7 @@ stardew_wiki/
 │   ├── ingredient_search.py # Ingredient search functionality
 │   ├── data/            # Data files for recipes
 │   │   ├── wiki.xlsx
+```
 
 ---
 ## Main Features
